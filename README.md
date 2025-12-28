@@ -139,6 +139,6 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
 
 
 ### IMAGES
-| Live Facerecognition_result | Web_Camera | Setup_Hardware |
+| Live_result | Web_Camera | Setup_Hardware |
 |:---:|:---:|:---:|
-| ![Live Facerecognition_result](Live Facerecognition_result.jpeg) | ![Web_Camera](Web_Camera.jpeg) | ![Setup_Hardware](Setup_Hardware.jpeg) |
+| ![Live_result](Live_result.jpeg) | ![Web_Camera](Web_Camera.jpeg) | ![Setup_Hardware](Setup_Hardware.jpeg) |
