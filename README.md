@@ -136,4 +136,7 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
        ```bash
        python3 face_rec-webcam.py
  Press **q** to exit.      
-   
+
+
+****Set Up & Hardware**** 
+[Hardware Set Up] (Set Up of raspberry.jpeg)
