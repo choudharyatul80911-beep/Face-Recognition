@@ -138,5 +138,7 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
  Press **q** to exit.      
 
 
-****Set Up & Hardware**** 
-[Hardware&Setup] (Setup_Hardware.jpeg)
+### IMAGES
+| Live Facerecognition_result | Web_Camera | Setup_Hardware |
+|:---:|:---:|:---:|
+| ![Live Facerecognition_result](Live Facerecognition_result.jpeg) | ![Web_Camera](Web_Camera.jpeg) | ![Setup_Hardware](Setup_Hardware.jpeg) |
