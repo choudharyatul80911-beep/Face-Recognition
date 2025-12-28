@@ -90,12 +90,53 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
 
     CONF_SWAPSIZE=512
 
-**Then restart the service** 
+12. **Then restart the service** 
           
     
            sudo systemctl restart dphys-swapfile
            
-**Download the Code**
+13. **Download the Code**
+      ```bash
+           https://github.com/choudharyatul80911-beep/Face-Recognition.git
+      
+14. **Change into the directory**
+    ```bash
+            cd facial_recognition
+       
+15. **Delete the sample directory**
+       ```bash
+        rm -r dataset/Z
+16. **Headshots**
+       ```bash
+       nano headshots_capture-webcam.py
+ 17. **Change line 7 of the file replacing YOUR_NAME**
+        ```bash
+        YOUR_NAME=''YOUR_NAME''
+ 18. **Save and exit by pressing Ctrl+X, then Y, and hit Enter**
 
+     
+ 19. **Now run the script for the webcam**
+        ```bash
+        python3 headshots_capture-webcam.py
 
+        
+ **Look at the camera and press the spacebar to take photos. Move your head around and take at least 10 photos.**
+
+ 
+ **Press q to exit . Repeat this for each person**
+ 
+ **You should now see a folder for each person with a set of headshots**
+
+ 
+20. **Train the Model**
+ 
+      ```bash
+      python3 model_training.py
+
+   If successful, you will get a .pickle file.
+
+21. **Run the Facial Recognition Test**
+       ```bash
+       python3 face_rec-webcam.py
+ Press **q** to exit.      
    
