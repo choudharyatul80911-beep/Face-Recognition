@@ -26,38 +26,35 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
 
 ## Installation
 
-1. **Clone the Repository**
-   ```bash
-   git clone [https://github.com/choudharyatul80911-beep/Face-Recognition.git]
-   cd Face-Recognition
-2. **Update system**
+
+1. **Update system**
    ```bash
       sudo apt-get update
       sudo apt-get upgrade
 
 
-3. **Set up Virtual Environment and Install Libraries**
+2. **Set up Virtual Environment and Install Libraries**
    
      ```bash
    python3 -m venv --system-site-packages face_rec
-4. **Activate the virtual environment**
+3. **Activate the virtual environment**
    
     ```bash
-                             source face_rec/bin/activate
-6. **Add Swap Memory**
+     source face_rec/bin/activate
+4. **Add Swap Memory**
 
    The Raspberry Pi doesn't have enough memory to complile dlib. Add swap space to avoide memory crashes during compilation
    
    ```bash
 
          sudo nano /etc/dphys-swapfile
-7. **Find the line**
+5. **Find the line**
 
     ```bash
             
             CONF_SWAPSIZE=512
 
-8. **Change it to**
+6. **Change it to**
    
    ```bash
 
@@ -67,7 +64,7 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
 
     
         sudo systemctl restart dphys-swapfile
-9. **Install Required Python Libraries**
+7. **Install Required Python Libraries**
     ```bash
     pip install opencv-python
     pip install imutils
@@ -78,44 +75,44 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
 **Once you're done with installation, it's a good idea to change the swap size bac to reduce SD card wear**
 
     sudo nano /etc/dphys-swapfile
-10. **Find the line**
+8. **Find the line**
 
     ```bash
             
      CONF_SWAPSIZE=2048
 
-11. **Change it to**
+9. **Change it to**
    
     ```bash
 
     CONF_SWAPSIZE=512
 
-12. **Then restart the service** 
+10. **Then restart the service** 
           
     
            sudo systemctl restart dphys-swapfile
            
-13. **Download the Code**
+11. **Download the Code**
       ```bash
            https://github.com/choudharyatul80911-beep/Face-Recognition.git
       
-14. **Change into the directory**
+12. **Change into the directory**
     ```bash
             cd facial_recognition
        
-15. **Delete the sample directory**
+13. **Delete the sample directory**
        ```bash
         rm -r dataset/Z
-16. **Headshots**
+14. **Headshots**
        ```bash
        nano headshots_capture-webcam.py
- 17. **Change line 7 of the file replacing YOUR_NAME**
+ 15. **Change line 7 of the file replacing YOUR_NAME**
         ```bash
         YOUR_NAME=''YOUR_NAME''
- 18. **Save and exit by pressing Ctrl+X, then Y, and hit Enter**
+ 16. **Save and exit by pressing Ctrl+X, then Y, and hit Enter**
 
      
- 19. **Now run the script for the webcam**
+ 17. **Now run the script for the webcam**
         ```bash
         python3 headshots_capture-webcam.py
 
@@ -128,14 +125,14 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
  **You should now see a folder for each person with a set of headshots**
 
  
-20. **Train the Model**
+18. **Train the Model**
  
       ```bash
       python3 model_training.py
 
    If successful, you will get a .pickle file.
 
-21. **Run the Facial Recognition Test**
+19. **Run the Facial Recognition Test**
        ```bash
        python3 face_rec-webcam.py
  Press **q** to exit.      
