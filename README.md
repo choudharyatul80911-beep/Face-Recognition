@@ -139,4 +139,4 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
 
 
 ****Set Up & Hardware**** 
-[Hardware Set Up] (Set Up of raspberry.jpeg)
+[Hardware&Setup] (Setup_Hardware.jpeg)
