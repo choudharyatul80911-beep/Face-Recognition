@@ -76,6 +76,26 @@ This project is a customized implementation inspired by [Caroline Dunn's Facial 
 
 
 **Once you're done with installation, it's a good idea to change the swap size bac to reduce SD card wear**
-   ```bash
-       sudo nano /etc/dphys-swapfile
-Change 
+
+    sudo nano /etc/dphys-swapfile
+10. **Find the line**
+
+    ```bash
+            
+     CONF_SWAPSIZE=2048
+
+11. **Change it to**
+   
+    ```bash
+
+    CONF_SWAPSIZE=512
+
+**Then restart the service** 
+          
+    
+           sudo systemctl restart dphys-swapfile
+           
+**Download the Code**
+
+
+   
